@@ -1,0 +1,116 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.grid{
+    display: grid;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.header .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(47, 106, 127);
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    mix-blend-mode: hard-light;
+}
+.header video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+.header .header-content{
+    width: 80%;
+    height: max-content;
+    padding: 8rem 1.5rem 3rem;
+    display: flex;
+    row-gap: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    z-index: 100;
+}
+.header .header-content .text-content{
+    padding: 2rem 0;
+}
+.header .header-content .text-content .small-text{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.header .header-content .text-content .header-title{
+   position: relative;
+   font-size: 18px;
+}
+.header .card-content{
+    position: relative;
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 10px;
+    gap: 1rem;
+}
+.header .card-content label{
+    color: #49575e;
+    display: block;
+    padding-bottom:10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.header .card-content .label-total{
+    justify-content: space-between;
+    align-items: center;
+}
+.header .card-content .input{
+    height: 40px;
+    padding: 0 1rem;
+    background: rgb(235 , 235, 235);
+    border-radius: 3rem;
+}
+.header .card-content .input input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+.search-option{
+    background: linear-gradient(to right, #00d2ff, #3a7bd5) transparent;
+    position: absolute;
+    width: max-content;
+    bottom: -1.3rem;
+    column-gap: .8rem;
+    border-radius: 3rem;
+    padding: 5px 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    cursor: pointer;
+}
+@media screen and (min-width:968px){
+    .card-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 300px;
+    }
+    .header .header-content .text-content .small-text{
+        font-size: 30px;
+    }
+    .header .header-content .text-content .header-title{
+       font-size: 45px;
+    }
+}

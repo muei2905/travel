@@ -1,0 +1,21 @@
+.place-display{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.place-display h2{
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+.place-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+@media screen and (max-width:1050px){
+    .place-display-list{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
